@@ -1,0 +1,14 @@
+Thread--> Thread is a independent path of execution ina same program.
+
+    - Ways to create a thread
+    1) extending a Thread class.
+    2) implementing a Runnable interface.
+    3) implementing a Callable interface.
+
+    we have a constructors in a thread class.
+
+   By default thread names is Thread-0, Thread-1 like this.
+   setName()--> we have set a name to threads using setName () method.
+
+  - for Start the thread execution we have use start method.
+  - internally start() method call the run () method.
