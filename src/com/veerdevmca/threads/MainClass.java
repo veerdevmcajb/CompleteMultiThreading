@@ -29,5 +29,19 @@ public class MainClass {
         googlePay1.setName("Shiv GooglePay");
         googlePay1.start();
 
+
+        HDFCBank RamAcc=new HDFCBank(15000);
+        ATMThread ATM2=new ATMThread(RamAcc);
+        ATM2.setName("Ram ATM Card");
+        ATM2.start();
+
+        PhonePe phonepe2=new PhonePe(RamAcc);
+        phonepe2.setName("Ram phonePay");
+        phonepe2.start();
+
+        GooglePay googlePay2=new GooglePay(RamAcc);
+        googlePay2.setName("Ram GooglePay");
+        googlePay2.start();
+
     }
 }
