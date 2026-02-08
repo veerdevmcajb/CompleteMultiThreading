@@ -9,7 +9,11 @@ public class ATMThread extends Thread{
     @Override
     public void run() {
 
-        bankAccnt.withdraw(4000);
+        try {
+            bankAccnt.withdraw(8000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }
