@@ -27,3 +27,14 @@ static AtomicInteger count=new AtomicInteger(0);
 
     }
 }
+
+// it will solve a race case condition .
+// how it will work steps
+//    1)Read current value
+//      2) compair with expected value
+//      3) if same -> update
+//      4) if not-> retry
+//  faster performance.
+// WHEN NOT TO USE ATOMICINTEGER
+// -when multiple variables must be updated together.
+//

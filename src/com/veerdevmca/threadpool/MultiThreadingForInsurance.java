@@ -27,7 +27,9 @@ public class MultiThreadingForInsurance {
         customerList.add(c7);
         customerList.add(c8);
 
-        ExecutorService ex= Executors.newFixedThreadPool(3);
+        //ExecutorService ex= Executors.newFixedThreadPool(3);
+       // ExecutorService ex= Executors.newCachedThreadPool();
+        ExecutorService ex= Executors.newSingleThreadExecutor();
 
         for(int i=0;i<customerList.size();i++){
             TriggerEmailForPolicy t=new TriggerEmailForPolicy(customerList.get(i));

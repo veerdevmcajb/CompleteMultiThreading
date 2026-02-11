@@ -10,7 +10,7 @@ public class ATMThread extends Thread{
     public void run() {
 
         try {
-            bankAccnt.withdraw(8000);
+            bankAccnt.withdraw(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

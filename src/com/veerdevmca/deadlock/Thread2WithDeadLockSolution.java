@@ -4,6 +4,7 @@ public class Thread2WithDeadLockSolution extends Thread {
 
     Object obj1=null;
     Object obj2=null;
+
     Thread2WithDeadLockSolution(Object obj1, Object obj2){
         this.obj1=obj1;
         this.obj2=obj2;
